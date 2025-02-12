@@ -1,0 +1,25 @@
+Area Plot
+
+An Area Plot is an extension of a Line Chart.
+An Area Plot is obtained by filling the region between the Line Chart and the axes with a color. 
+When more than one Area Plot is shown in the same graph, each area plot is filled with a different color.
+Due to the color-fill effect of an area plot, the quantum and the trend of the variable is distinctly visible without making much effort. 
+Though it is possible to do the same with line charts, interpretation is not immediate, hence it takes time to comprehend multiple Line Charts plotted on a graph.
+
+Types of Area Plots:
+Overlapping Area plots: In this scheme, multiple area plots are displayed in a graph with their areas overlapping.  
+Drawing overlapping area plots require the color-fill effect to be transparent.
+
+Stacked Area plots: Multiple area plots stacked one on top of another or one below another.
+
+Percentage based area plot: An area plot drawn to plot variables with a maximum value of 100. 
+Percentage based area plots can be drawn either with a stacked or with an overlapped scheme.
+
+
+Drawing area plot for a pandas DataFrame:
+DataFrame class has several methods for visualizing data using various diagrams. Area plot is one among them.
+To get an area plot for a pandas DataFrame, make a Python call: dataFrameinstance.plot.area().
+Area plot is drawn using the plot member of the DataFrame.
+If True is specified for the Boolean parameter stacked, area() draws a stacked area plot. It is the default behavior for the area() method.
+To make an unstacked or overlapped area plot, the stacked parameter should be given the Boolean value "False".
+To draw a percentage based area plot, a new DataFrame can be created with normalized values and area plot can be plotted for the new DataFrame.
